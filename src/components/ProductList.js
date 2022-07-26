@@ -29,7 +29,6 @@ function ProductList() {
   const [products, setProducts] = useState([]);
   const [open, setOpen] = useState(false);
 
-
   useEffect(() => {
     fetchAPIProducts();
   }, []);
@@ -98,7 +97,7 @@ function ProductList() {
   }
    
   const columns = [
-    {field: 'name', headerName: 'Brand', width: 200},
+    {field: 'name', headerName: 'Name', width: 200},
     {field: 'type', headerName: 'Type', width: 200},
     {field: 'color', headerName: 'Color', width: 200},
     {field: 'brand', headerName: 'Brand', width: 200},
